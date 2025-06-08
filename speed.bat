@@ -1,2 +1,2 @@
-py src/speedup.py
+python src/speedup.py
 pause

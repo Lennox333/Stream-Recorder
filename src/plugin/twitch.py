@@ -10,9 +10,10 @@ from dotenv import load_dotenv
 import os
 
 
-class TwitchClass:
+class Twitch:
     def __init__(self, channel: Dict[str, Any]):
-        load_dotenv()
+        if not load_dotenv():
+            raise RuntimeError("Failed to load .env file")
 
         self.stream_url =  f"https://www.twitch.tv/{channel["name"]}"
         self.client_id = os.getenv("CLIENT_ID")
@@ -43,7 +44,8 @@ class TwitchClass:
                 r.raise_for_status()
                 info = await r.json()
                 if info["data"]:
-                    return "OPEN"
+                    if info["data"][0]['game_name'] == 'Art':
+                        return "OPEN"
             return "CLOSE"
         except aiohttp.ClientError as e:
             log.error(
@@ -52,6 +54,7 @@ class TwitchClass:
         except Exception as e:
             log.error(f"Failed to fetch live info for {channel['name']}: {e}")
         return "CLOSE"
+    
     
     async def stream_process_arguments(
         self,

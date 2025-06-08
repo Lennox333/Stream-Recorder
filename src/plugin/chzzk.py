@@ -8,7 +8,7 @@ from utils import load_json_async
 
 
 
-class ChzzkClass:
+class Chzzk:
     def __init__(self, channel: Dict[str, Any]):
         self.stream_url =  f"https://chzzk.naver.com/live/{channel['id']}"
         self.LIVE_DETAIL_API = (
@@ -29,7 +29,7 @@ class ChzzkClass:
 
 
     async def get_session_cookies(self) -> Dict[str, str]:
-        base_directory = Path(__file__).resolve().parent / "files"
+        base_directory = Path(__file__).resolve().parent.parent / "files"
         COOKIE_FILE_PATH = base_directory/  Path("cookie.json")
         return await load_json_async(COOKIE_FILE_PATH)
 

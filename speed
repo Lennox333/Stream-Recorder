@@ -1,0 +1,14 @@
+#!/bin/bash
+VENV_DIR="$PWD/venv"
+if [ -d "$VENV_DIR" ]; then
+    echo "Activating virtual environment in $VENV_DIR"
+    source "$VENV_DIR/bin/activate"
+else
+    echo "Virtual environment not found in $VENV_DIR"
+    exit 1
+fi
+
+# Execute your Python script
+"$VENV_DIR/bin/python" src/speedup.py
+
+exit 0

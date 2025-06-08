@@ -2,7 +2,7 @@ import os
 import json
 
 # File path settings
-script_directory = os.path.dirname(os.path.abspath(__name__)) + "/files"
+script_directory =  os.path.dirname(os.path.abspath(__file__)) + "/files"
 channel_count_file_path = os.path.join(script_directory, "channel_count.txt")
 channels_file_path = os.path.join(script_directory, "channels.json")
 delays_file_path = os.path.join(script_directory, "delays.json")
@@ -36,10 +36,28 @@ def load_delays():
 def try_again():
     print("Please try again.\n")
 
+def get_channels():
+    # Define column widths
+    name_width = 36
+    id_width = 36
+    platform_width = 10
+    
+
+    print(f"{'Name'.ljust(name_width)} {'ID'.ljust(id_width)} {'Platform'.ljust(platform_width)} {'Rec Status'.ljust(5)}")
+    print("-" * (name_width + id_width + platform_width))
+
+    for channel in channels:
+        name = channel.get("name", "").ljust(name_width)
+        id_ = channel.get("id", "").ljust(id_width)
+        platform = channel.get("platform", "N/A").ljust(platform_width)  
+        rec_status = 'on' if channel.get('active', 'off') == 'on' else 'off'
+        print(f"{name} {id_} {platform} {rec_status}")
+        
 def add_channel(channel_count):    
     print("""Available Platform is: 
             1. twitch
             2. chzzk
+            3. bilibili
           """)
     platform = int(input(": "))
     if platform == 1: 
@@ -49,6 +67,10 @@ def add_channel(channel_count):
     elif platform == 2: 
         platform = "chzzk"
         id = str(input("Enter the unique ID of the streamer channel you want to add: "))
+        name = str(input("Enter the streamer name:  "))
+    elif platform == 3: 
+        platform = "bilibili"
+        id = str(input("Enter the room ID of the streamer channel you want to add: "))
         name = str(input("Enter the streamer name:  "))
 
     while True:
@@ -73,10 +95,10 @@ def add_channel(channel_count):
         else:
             try_again()
 
+
 def delete_channel():
     print("Current channel list:")
-    for channel in channels:
-        print(f"id: {channel['id']}, name: {channel['name']}")
+    get_channels()
 
     channel_to_delete_ID = input("Enter the ID of the channel to delete: ")
     channel_to_delete_index = next((index for index, channel in enumerate(channels) if channel["id"] == channel_to_delete_ID), -1)
@@ -89,9 +111,7 @@ def delete_channel():
         print(f"The channel with ID {channel_to_delete_ID} does not exist.")
 
 def toggle_channel_recording():
-    print("Current channel list:")
-    for channel in channels:
-        print(f"id: {channel['id']}, name: {channel['name']}, recording status: {'On' if channel.get('active', True) == 'on' else 'Off'}")
+    get_channels()
 
     channel_ID = input("Change the recording status of the channel ID:  ")
     for channel in channels:
