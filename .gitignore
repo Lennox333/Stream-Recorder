@@ -6,11 +6,11 @@ channel_count.txt
 New Text Document.txt
 logging.log
 log.log
-plugin/__pycache__/chzzk.cpython-312.pyc
-plugin/__pycache__/bilibili.cpython-312.pyc
 speeddddd.bat
 ffmpeg
 venv
 speed up
 recorded
 src/__pycache__
+*.pyc
+__pycache__/

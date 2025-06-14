@@ -134,9 +134,16 @@ def build_trim_filter(index: int, start: str = '', end: str = '') -> str:
     
 def ask_delete(comp_result: bool, videos_dir: list):
     if comp_result:
-        y_n = input("Do u wanna delete original videos? (y/n): ")
-        if y_n == 'y':
-            delete_video(videos_dir)
+        while True:
+            y_n = input("Do u wanna delete original videos? (y/n): ")
+            if y_n == 'y':
+                delete_video(videos_dir)
+                break
+            elif 'n':
+                break
+            else:
+                print("invalid answer, try again ")
+
 
 def construct_args(videos: list) -> tuple[list, list]:
     """
