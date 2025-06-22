@@ -13,7 +13,7 @@ import os
 class Twitch:
     def __init__(self, channel: Dict[str, Any]):
         if not load_dotenv():
-            raise RuntimeError("Failed to load .env file")
+            log.error("Failed to load .env file")
 
         self.stream_url =  f"https://www.twitch.tv/{channel["name"]}"
         self.client_id = os.getenv("CLIENT_ID")

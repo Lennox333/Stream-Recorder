@@ -177,18 +177,10 @@
   },
   {
     "platform": "twitch",
-    "id": "eo58",
-    "name": "eo58",
-    "output_dir": "./recorded/eo58",
-    "identifier": "ch23",
-    "active": "on"
-  },
-  {
-    "platform": "twitch",
     "id": "fztt_",
     "name": "fztt_",
     "output_dir": "./recorded/fztt_",
-    "identifier": "ch24",
+    "identifier": "ch23",
     "active": "on"
   },
   {
@@ -196,7 +188,7 @@
     "id": "ato1004fd",
     "name": "ato1004fd",
     "output_dir": "./recorded/ato1004fd",
-    "identifier": "ch25",
+    "identifier": "ch24",
     "active": "on"
   },
   {
@@ -204,7 +196,7 @@
     "id": "6f9a16acb16f5288b63ca457c732b8e5",
     "name": "\uc0ac\ub098 SANA",
     "output_dir": "./recorded/\uc0ac\ub098 SANA",
-    "identifier": "ch26",
+    "identifier": "ch25",
     "active": "on"
   },
   {
@@ -212,7 +204,7 @@
     "id": "kimpring",
     "name": "kimpring",
     "output_dir": "./recorded/kimpring",
-    "identifier": "ch27",
+    "identifier": "ch26",
     "active": "on"
   },
   {
@@ -220,7 +212,7 @@
     "id": "mery__s2_",
     "name": "mery__s2_",
     "output_dir": "./recorded/mery__s2_",
-    "identifier": "ch28",
+    "identifier": "ch27",
     "active": "off"
   },
   {
@@ -228,7 +220,7 @@
     "id": "tmbgmi",
     "name": "tmbgmi",
     "output_dir": "./recorded/tmbgmi",
-    "identifier": "ch29",
+    "identifier": "ch28",
     "active": "on"
   },
   {
@@ -236,7 +228,7 @@
     "id": "xixeong",
     "name": "xixeong",
     "output_dir": "./recorded/xixeong",
-    "identifier": "ch30",
+    "identifier": "ch29",
     "active": "on"
   },
   {
@@ -244,7 +236,7 @@
     "id": "huhi_1211",
     "name": "huhi_1211",
     "output_dir": "./recorded/huhi_1211",
-    "identifier": "ch31",
+    "identifier": "ch30",
     "active": "off"
   },
   {
@@ -252,7 +244,7 @@
     "id": "leviathann0902",
     "name": "leviathann0902",
     "output_dir": "./recorded/leviathann0902",
-    "identifier": "ch32",
+    "identifier": "ch31",
     "active": "off"
   },
   {
@@ -260,7 +252,7 @@
     "id": "dyarikku",
     "name": "dyarikku",
     "output_dir": "./recorded/dyarikku",
-    "identifier": "ch33",
+    "identifier": "ch32",
     "active": "off"
   },
   {
@@ -268,7 +260,7 @@
     "id": "miyukiiii_",
     "name": "miyukiiii_",
     "output_dir": "./recorded/miyukiiii_",
-    "identifier": "ch34",
+    "identifier": "ch33",
     "active": "off"
   },
   {
@@ -276,7 +268,7 @@
     "id": "22406972",
     "name": "\u67e5\u7121\u4eba",
     "output_dir": "./recorded/\u67e5\u7121\u4eba",
-    "identifier": "ch35",
+    "identifier": "ch34",
     "active": "off"
   },
   {
@@ -284,7 +276,7 @@
     "id": "kunomd",
     "name": "kunomd",
     "output_dir": "./recorded/kunomd",
-    "identifier": "ch36",
+    "identifier": "ch35",
     "active": "on"
   },
   {
@@ -292,7 +284,7 @@
     "id": "meltyrice",
     "name": "meltyrice",
     "output_dir": "./recorded/meltyrice",
-    "identifier": "ch37",
+    "identifier": "ch36",
     "active": "on"
   },
   {
@@ -300,7 +292,7 @@
     "id": "fa39b430665e23c408820633dde17917",
     "name": "\uc9c0\ube75\uc785\ub2c8\ub2e4",
     "output_dir": "./recorded/\uc9c0\ube75\uc785\ub2c8\ub2e4",
-    "identifier": "ch38",
+    "identifier": "ch37",
     "active": "off"
   },
   {
@@ -308,7 +300,7 @@
     "id": "kuri0819",
     "name": "kuri0819",
     "output_dir": "./recorded/kuri0819",
-    "identifier": "ch39",
+    "identifier": "ch38",
     "active": "on"
   },
   {
@@ -316,7 +308,7 @@
     "id": "eo58",
     "name": "eo58",
     "output_dir": "./recorded/eo58",
-    "identifier": "ch40",
+    "identifier": "ch39",
     "active": "on"
   },
   {
@@ -324,7 +316,7 @@
     "id": "doksyuri",
     "name": "doksyuri",
     "output_dir": "./recorded/doksyuri",
-    "identifier": "ch41",
+    "identifier": "ch40",
     "active": "on"
   },
   {
@@ -332,7 +324,7 @@
     "id": "kuuroto",
     "name": "kuuroto",
     "output_dir": "./recorded/kuuroto",
-    "identifier": "ch42",
+    "identifier": "ch41",
     "active": "on"
   },
   {
@@ -340,7 +332,7 @@
     "id": "3bdfeb2d3698b6c6a8ec6411181698cf",
     "name": "Niaiserie",
     "output_dir": "./recorded/Niaiserie",
-    "identifier": "ch43",
+    "identifier": "ch42",
     "active": "on"
   },
   {
@@ -348,7 +340,7 @@
     "id": "ahems112",
     "name": "ahems112",
     "output_dir": "./recorded/ahems112",
-    "identifier": "ch44",
+    "identifier": "ch43",
     "active": "on"
   },
   {
@@ -356,7 +348,7 @@
     "id": "a1a8019e7151c1eb5ac2a04a2793ea14",
     "name": "\uc9c0\uadf8\ub9e8",
     "output_dir": "./recorded/\uc9c0\uadf8\ub9e8",
-    "identifier": "ch45",
+    "identifier": "ch44",
     "active": "on"
   },
   {
@@ -364,7 +356,7 @@
     "id": "hwhw2477",
     "name": "hwhw2477",
     "output_dir": "./recorded/hwhw2477",
-    "identifier": "ch46",
+    "identifier": "ch45",
     "active": "on"
   },
   {
@@ -372,7 +364,7 @@
     "id": "8ffae902181e00dcafb1fdebb80be4ac",
     "name": "\ud6c4\ud788\uc774",
     "output_dir": "./recorded/\ud6c4\ud788\uc774",
-    "identifier": "ch47",
+    "identifier": "ch46",
     "active": "off"
   },
   {
@@ -380,7 +372,7 @@
     "id": "95df39a8c8f525ff98a16ce220053dc6",
     "name": "KJI",
     "output_dir": "./recorded/KJI",
-    "identifier": "ch48",
+    "identifier": "ch47",
     "active": "on"
   }
 ]

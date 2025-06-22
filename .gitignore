@@ -1,16 +1,11 @@
 7zr.exe
 .env
-files/channels.json
-files/delays.json
-channel_count.txt
-New Text Document.txt
 logging.log
 log.log
-speeddddd.bat
 ffmpeg
 venv
 speed up
 recorded
-src/__pycache__
-*.pyc
 __pycache__/
+*.pyc
+*.pyo
