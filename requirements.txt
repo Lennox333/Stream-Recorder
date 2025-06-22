@@ -1,0 +1,7 @@
+send2trash
+streamlink
+aiohttp
+aiofiles
+orjson
+uvloop
+python-dotenv

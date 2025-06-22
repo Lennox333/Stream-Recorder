@@ -30,7 +30,7 @@ else
 fi
 
 # Install required Python packages
-"$VENV_DIR/bin/pip" install --upgrade send2trash streamlink aiohttp aiofiles orjson uvloop dotenv
+"$VENV_DIR/bin/pip" install --upgrade -r requirements.txt
 
 # Deactivate the virtual environment
 deactivate
