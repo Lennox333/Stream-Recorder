@@ -61,7 +61,7 @@
     "name": "bangsom",
     "output_dir": "./recorded/bangsom",
     "identifier": "ch8",
-    "active": "on"
+    "active": "off"
   },
   {
     "platform": "twitch",
@@ -128,19 +128,11 @@
     "active": "off"
   },
   {
-    "platform": "chzzk",
-    "id": "6d2681641660b11e483f1d5a645f34ac",
-    "name": "ynk1004fd",
-    "output_dir": "./recorded/ynk1004fd",
-    "identifier": "ch17",
-    "active": "off"
-  },
-  {
     "platform": "twitch",
     "id": "k_imsk",
     "name": "k_imsk",
     "output_dir": "./recorded/k_imsk",
-    "identifier": "ch18",
+    "identifier": "ch17",
     "active": "off"
   },
   {
@@ -148,7 +140,7 @@
     "id": "zig9091",
     "name": "zig9091",
     "output_dir": "./recorded/zig9091",
-    "identifier": "ch19",
+    "identifier": "ch18",
     "active": "on"
   },
   {
@@ -156,7 +148,7 @@
     "id": "01bfd464962ecdd6c1b97cf2bd0d5bc5",
     "name": "\ub77c\uc6c0 \uc544\uce74\ub370\ubbf8",
     "output_dir": "./recorded/\ub77c\uc6c0 \uc544\uce74\ub370\ubbf8",
-    "identifier": "ch20",
+    "identifier": "ch19",
     "active": "off"
   },
   {
@@ -164,7 +156,7 @@
     "id": "ddangbi",
     "name": "ddangbi",
     "output_dir": "./recorded/ddangbi",
-    "identifier": "ch21",
+    "identifier": "ch20",
     "active": "off"
   },
   {
@@ -172,7 +164,7 @@
     "id": "f98d8765a48fac60bcddd9b7fc866897",
     "name": "eo58",
     "output_dir": "./recorded/eo58",
-    "identifier": "ch22",
+    "identifier": "ch21",
     "active": "off"
   },
   {
@@ -180,7 +172,7 @@
     "id": "fztt_",
     "name": "fztt_",
     "output_dir": "./recorded/fztt_",
-    "identifier": "ch23",
+    "identifier": "ch22",
     "active": "on"
   },
   {
@@ -188,7 +180,7 @@
     "id": "ato1004fd",
     "name": "ato1004fd",
     "output_dir": "./recorded/ato1004fd",
-    "identifier": "ch24",
+    "identifier": "ch23",
     "active": "on"
   },
   {
@@ -196,7 +188,7 @@
     "id": "6f9a16acb16f5288b63ca457c732b8e5",
     "name": "\uc0ac\ub098 SANA",
     "output_dir": "./recorded/\uc0ac\ub098 SANA",
-    "identifier": "ch25",
+    "identifier": "ch24",
     "active": "on"
   },
   {
@@ -204,7 +196,7 @@
     "id": "kimpring",
     "name": "kimpring",
     "output_dir": "./recorded/kimpring",
-    "identifier": "ch26",
+    "identifier": "ch25",
     "active": "on"
   },
   {
@@ -212,7 +204,7 @@
     "id": "mery__s2_",
     "name": "mery__s2_",
     "output_dir": "./recorded/mery__s2_",
-    "identifier": "ch27",
+    "identifier": "ch26",
     "active": "off"
   },
   {
@@ -220,7 +212,7 @@
     "id": "tmbgmi",
     "name": "tmbgmi",
     "output_dir": "./recorded/tmbgmi",
-    "identifier": "ch28",
+    "identifier": "ch27",
     "active": "on"
   },
   {
@@ -228,15 +220,15 @@
     "id": "xixeong",
     "name": "xixeong",
     "output_dir": "./recorded/xixeong",
-    "identifier": "ch29",
-    "active": "on"
+    "identifier": "ch28",
+    "active": "off"
   },
   {
     "platform": "twitch",
     "id": "huhi_1211",
     "name": "huhi_1211",
     "output_dir": "./recorded/huhi_1211",
-    "identifier": "ch30",
+    "identifier": "ch29",
     "active": "off"
   },
   {
@@ -244,7 +236,7 @@
     "id": "leviathann0902",
     "name": "leviathann0902",
     "output_dir": "./recorded/leviathann0902",
-    "identifier": "ch31",
+    "identifier": "ch30",
     "active": "off"
   },
   {
@@ -252,7 +244,7 @@
     "id": "dyarikku",
     "name": "dyarikku",
     "output_dir": "./recorded/dyarikku",
-    "identifier": "ch32",
+    "identifier": "ch31",
     "active": "off"
   },
   {
@@ -260,7 +252,7 @@
     "id": "miyukiiii_",
     "name": "miyukiiii_",
     "output_dir": "./recorded/miyukiiii_",
-    "identifier": "ch33",
+    "identifier": "ch32",
     "active": "off"
   },
   {
@@ -268,7 +260,7 @@
     "id": "22406972",
     "name": "\u67e5\u7121\u4eba",
     "output_dir": "./recorded/\u67e5\u7121\u4eba",
-    "identifier": "ch34",
+    "identifier": "ch33",
     "active": "off"
   },
   {
@@ -276,7 +268,7 @@
     "id": "kunomd",
     "name": "kunomd",
     "output_dir": "./recorded/kunomd",
-    "identifier": "ch35",
+    "identifier": "ch34",
     "active": "on"
   },
   {
@@ -284,15 +276,15 @@
     "id": "meltyrice",
     "name": "meltyrice",
     "output_dir": "./recorded/meltyrice",
-    "identifier": "ch36",
-    "active": "on"
+    "identifier": "ch35",
+    "active": "off"
   },
   {
     "platform": "chzzk",
     "id": "fa39b430665e23c408820633dde17917",
     "name": "\uc9c0\ube75\uc785\ub2c8\ub2e4",
     "output_dir": "./recorded/\uc9c0\ube75\uc785\ub2c8\ub2e4",
-    "identifier": "ch37",
+    "identifier": "ch36",
     "active": "off"
   },
   {
@@ -300,7 +292,7 @@
     "id": "kuri0819",
     "name": "kuri0819",
     "output_dir": "./recorded/kuri0819",
-    "identifier": "ch38",
+    "identifier": "ch37",
     "active": "on"
   },
   {
@@ -308,7 +300,7 @@
     "id": "eo58",
     "name": "eo58",
     "output_dir": "./recorded/eo58",
-    "identifier": "ch39",
+    "identifier": "ch38",
     "active": "on"
   },
   {
@@ -316,7 +308,7 @@
     "id": "doksyuri",
     "name": "doksyuri",
     "output_dir": "./recorded/doksyuri",
-    "identifier": "ch40",
+    "identifier": "ch39",
     "active": "on"
   },
   {
@@ -324,7 +316,7 @@
     "id": "kuuroto",
     "name": "kuuroto",
     "output_dir": "./recorded/kuuroto",
-    "identifier": "ch41",
+    "identifier": "ch40",
     "active": "on"
   },
   {
@@ -332,7 +324,7 @@
     "id": "3bdfeb2d3698b6c6a8ec6411181698cf",
     "name": "Niaiserie",
     "output_dir": "./recorded/Niaiserie",
-    "identifier": "ch42",
+    "identifier": "ch41",
     "active": "on"
   },
   {
@@ -340,7 +332,7 @@
     "id": "ahems112",
     "name": "ahems112",
     "output_dir": "./recorded/ahems112",
-    "identifier": "ch43",
+    "identifier": "ch42",
     "active": "on"
   },
   {
@@ -348,7 +340,7 @@
     "id": "a1a8019e7151c1eb5ac2a04a2793ea14",
     "name": "\uc9c0\uadf8\ub9e8",
     "output_dir": "./recorded/\uc9c0\uadf8\ub9e8",
-    "identifier": "ch44",
+    "identifier": "ch43",
     "active": "on"
   },
   {
@@ -356,7 +348,7 @@
     "id": "hwhw2477",
     "name": "hwhw2477",
     "output_dir": "./recorded/hwhw2477",
-    "identifier": "ch45",
+    "identifier": "ch44",
     "active": "on"
   },
   {
@@ -364,7 +356,7 @@
     "id": "8ffae902181e00dcafb1fdebb80be4ac",
     "name": "\ud6c4\ud788\uc774",
     "output_dir": "./recorded/\ud6c4\ud788\uc774",
-    "identifier": "ch46",
+    "identifier": "ch45",
     "active": "off"
   },
   {
@@ -372,6 +364,14 @@
     "id": "95df39a8c8f525ff98a16ce220053dc6",
     "name": "KJI",
     "output_dir": "./recorded/KJI",
+    "identifier": "ch46",
+    "active": "on"
+  },
+  {
+    "platform": "chzzk",
+    "id": "6d2681641660b11e483f1d5a645f34ac",
+    "name": "A.T",
+    "output_dir": "./recorded/A.T",
     "identifier": "ch47",
     "active": "on"
   }

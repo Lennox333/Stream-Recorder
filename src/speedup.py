@@ -9,6 +9,9 @@ import asyncio
 
 import platform
 
+class Config:
+    speed_factor = 10
+
 
 def speed_up(videos: list) -> str:
     setpts = ""
@@ -104,7 +107,7 @@ def compare_length(videos, output) -> bool:
 
     speed = get_length(output)
     
-    if (abs(total - speed * 10) <= 120 ):    
+    if (abs(total - speed * Config.speed_factor) <= 120 ):    
         print(f"speed up ok! {speed}  {total}")
         return True
     
@@ -123,13 +126,14 @@ def delete_video(videos):
         print(f"An error occurred: {e}")
 
 def build_trim_filter(index: int, start: str = '', end: str = '') -> str:
+    speed_factor = Config.speed_factor
     if start and end:
-        return f"[{index}:v]trim=start='{start}':end='{end}',setpts=PTS/10[v{index}]; "
+        return f"[{index}:v]trim=start='{start}':end='{end}',setpts=PTS/{speed_factor}[v{index}]; "
     elif start:
-        return f"[{index}:v]trim=start='{start}',setpts=PTS/10[v{index}]; "
+        return f"[{index}:v]trim=start='{start}',setpts=PTS/{speed_factor}[v{index}]; "
     elif end:
-        return f"[{index}:v]trim=end='{end}',setpts=PTS/10[v{index}]; "
-    return f"[{index}:v]setpts=PTS/10[v{index}];"
+        return f"[{index}:v]trim=end='{end}',setpts=PTS/{speed_factor}[v{index}]; "
+    return f"[{index}:v]setpts=PTS/{speed_factor}[v{index}];"
 
     
 def ask_delete(comp_result: bool, videos_dir: list):
@@ -176,7 +180,7 @@ def construct_args(videos: list) -> tuple[list, list]:
     setpts = speed_up(videos)
     cat = concat(videos)
 
-    matchStreamlinkFormat = re.search(r'\] (.*?)\.', output)
+    matchStreamlinkFormat = re.search(r'\] (.*)\.', output)
     if matchStreamlinkFormat is not None:
         matchStreamlinkFormat = matchStreamlinkFormat.group(1)
     else :
@@ -267,6 +271,7 @@ def main():
     while True:
         try:
             mode = int(input("Choose mode: 0 - normal 1 - bulk: "))
+            Config.speed_factor = int(input("Choose speed (default:10): ") or 10)
         except ValueError:
             print("Invalid input. Please enter 0 or 1.")
             continue
