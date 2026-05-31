@@ -9,3 +9,8 @@ recorded
 __pycache__/
 *.pyc
 *.pyo
+src/files/channels.json
+src/files/delays.json
+src/files/cookie.json
+speed_queue.txt
+pending_deletes.json

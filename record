@@ -1,31 +1,34 @@
 #!/bin/bash
 
 echo "Checking if python exists"
-if command -v python3 > /dev/null 2>&1; then
-    py=$(which python3)
-    echo "Using python3"
+if command -v python3 >/dev/null 2>&1; then
+  py=$(which python3)
+  echo "Using python3"
 else
-    if python --version | grep -q "3."; then
-        py=$(which python)
-        echo "Using python"
-    else
-        echo "Please install Python3 or 3.11 manually."
-        exit 1
-    fi
+  if python --version | grep -q "3."; then
+    py=$(which python)
+    echo "Using python"
+  else
+    echo "Please install Python3 or 3.11 manually."
+    exit 1
+  fi
 fi
 
-# Detect the current directory and activate the virtual environment
-VENV_DIR="$PWD/venv"
+# Detect the script directory and use parent directory for venv
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+echo "Script directory: $SCRIPT_DIR"
+VENV_DIR="$SCRIPT_DIR/venv"
+echo "Virtual environment directory: $VENV_DIR"
+
 if [ -d "$VENV_DIR" ]; then
-    echo "Activating virtual environment in $VENV_DIR"
-    source "$VENV_DIR/bin/activate"
+  echo "Activating virtual environment in $VENV_DIR"
+  source "$VENV_DIR/bin/activate" || { echo "Failed to activate virtual environment"; exit 1; }
 else
-    echo "Virtual environment not found in $VENV_DIR"
-    exit 1
+  echo "Virtual environment not found in $VENV_DIR"
+  exit 1
 fi
 
 # Execute your Python script
-"$VENV_DIR/bin/python" src/record.py
+"$VENV_DIR/bin/python" "$SCRIPT_DIR/src/record.py"
 
 exit 0
-
